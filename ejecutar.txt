@@ -1,0 +1,3 @@
+cd C:\camilo\openMVS-master\scripts\python
+
+python MvgMvsPipeline.py C:\camilo\point_cloud\images\aguacate\ C:\camilo\point_cloud\reconstruction_sequential\aguacate\
