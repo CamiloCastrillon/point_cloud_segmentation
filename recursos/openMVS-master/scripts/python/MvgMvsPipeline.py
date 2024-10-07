@@ -140,7 +140,7 @@ COLMAP_BIN = os.path.join(COLMAP_BIN, "colmap")
 if sys.platform.startswith('win'):
     COLMAP_BIN += ".bat"
 
-PRESET = {'SEQUENTIAL': [0, 1, 2, 3, 4, 5, 11, 17, 18, 19, 20],
+PRESET = {'SEQUENTIAL': [0, 1, 2, 3, 4, 5, 11, 17, 18, 19, 20], #[0, 1, 2, 3, 4, 5, 11, 17, 18, 19, 20]
           'GLOBAL': [0, 1, 2, 3, 4, 6, 11, 17, 18, 19, 20],
           'MVG_SEQ': [0, 1, 2, 3, 4, 5, 7, 8, 9, 11],
           'MVG_GLOBAL': [0, 1, 2, 3, 4, 6, 7, 8, 9, 11],
@@ -216,6 +216,7 @@ valores -p de openMVG_main_ComputeFeatures:
 class StepsStore:
     """ List of steps with facilities to configure them """
     def __init__(self):
+        print('ACA---------->'+OPENMVG_BIN)
         self.steps_data = [
             ["Intrinsics analysis",          # 0
              os.path.join(OPENMVG_BIN, "openMVG_main_SfMInit_ImageListing"),

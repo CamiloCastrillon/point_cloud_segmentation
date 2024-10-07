@@ -1,3 +1,17 @@
-cd C:\camilo\openMVS-master\scripts\python
+cd C:\camilo\trabajo_de_grado\point_cloud_segmentation\recursos\openMVS-master\scripts\python\
 
-python MvgMvsPipeline.py C:\camilo\point_cloud\images\aguacate\ C:\camilo\point_cloud\reconstruction_sequential\aguacate\
+python MvgMvsPipeline.py C:\camilo\trabajo_de_grado\point_cloud_segmentation\image_datasets\aguacate C:\camilo\trabajo_de_grado\point_cloud_segmentation\reconstruction_sequential\aguacate
+
+steps
+[0, 1, 2, 3, 4, 5, 11, 17, 18, 19, 20]
+
+binary open mvg
+C:\camilo\trabajo_de_grado\point_cloud_segmentation\recursos\vcpkg\packages\openmvg_x64-windows\tools\openmvg
+
+colmap binary
+C:\camilo\trabajo_de_grado\point_cloud_segmentation\recursos\colmap-x64-windows-nocuda\bin
+
+
+C:\camilo\trabajo_de_grado\point_cloud_segmentation\recursos\vcpkg\installed\x64-windows\tools\openmvg\openMVG_main_ConvertSfM_DataFormat -i C:\camilo\trabajo_de_grado\point_cloud_segmentation\reconstruction_sequential_own\aguacate\sfm_data.bin -o C:\camilo\trabajo_de_grado\point_cloud_segmentation\reconstruction_sequential_own\aguacate\sfm_data.json
+
+

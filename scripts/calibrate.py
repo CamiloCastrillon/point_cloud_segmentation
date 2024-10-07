@@ -4,10 +4,10 @@ import numpy as np
 import pickle
 
 # Variables
-folder_imgs             = 'C:/camilo/imgs/fotos_calibracion/'
+folder_imgs             = 'C:/camilo/trabajo_de_grado/point_cloud_segmentation/images_calibration/'
 #'C:/camilo/calibrate_camera/imgs_calib/'
 #'C:/camilo/imgs/fotos_calibracion/'
-path_save_calibration   = 'C:/camilo/calibrate_camera/xiaomi_redmi_note_11.pkl'
+path_save_calibration   = 'C:/camilo/trabajo_de_grado/point_cloud_segmentation/calibrations/xiaomi_redmi_note_11.pkl'
 
 # Configurar el tamaño del tablero de ajedrez
 chessboard_size = (17, 11)  # Número de esquinas internas por fila y columna
@@ -51,10 +51,10 @@ cv2.destroyAllWindows()
 ret, camera_matrix, dist_coeffs, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
 
 # Mostrar los resultados de la calibración
-print('\nMatriz de la cámara:\n', camera_matrix)
-print('\nCoeficientes de distorsión:\n', dist_coeffs)
-print('\nVectores de rotación:\n', rvecs)
-print('\nVectores de traslación:\n', tvecs)
+print('/nMatriz de la cámara:/n', camera_matrix)
+print('/nCoeficientes de distorsión:/n', dist_coeffs)
+print('/nVectores de rotación:/n', rvecs)
+print('/nVectores de traslación:/n', tvecs)
 
 # Guardar los parámetros de calibración en un archivo
 calibration_data = {
@@ -63,10 +63,10 @@ calibration_data = {
     'rvecs': rvecs,
     'tvecs': tvecs
 }
-"""
-print('\nGuardando datos de calibración.')
+
+print('/nGuardando datos de calibración.')
 with open(path_save_calibration, 'wb') as f:
     pickle.dump(calibration_data, f)
 
 print('Parámetros de calibración guardados exitosamente.')
-"""
+

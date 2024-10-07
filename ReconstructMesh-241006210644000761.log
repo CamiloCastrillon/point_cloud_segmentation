@@ -1,0 +1,33 @@
+21:06:44 [App     ] Build date: Aug 16 2024, 13:48:23
+21:06:44 [App     ] CPU: AMD Ryzen 5 3600 6-Core Processor               (12 cores)
+21:06:44 [App     ] RAM: 15.93GB Physical Memory 128.00TB Virtual Memory
+21:06:44 [App     ] OS: Windows 8 x64
+21:06:44 [App     ] Disk: 333.94GB (953.05GB) space
+21:06:44 [App     ] SSE & AVX compatible CPU & OS detected
+21:06:44 [App     ] Command line: ReconstructMesh -i C:\camilo\trabajo_de_grado\point_cloud_segmentation\reconstruction_sequential_own\aguacate\\scene_dense.mvs -o C:\camilo\trabajo_de_grado\point_cloud_segmentation\reconstruction_sequential_own\aguacate\\scene_dense.ply
+21:06:47 [App     ] Scene loaded (2s259ms):
+	25 images (25 calibrated) with a total of 44.65 MPixels (1.79 MPixels/image)
+	2203567 points, 0 vertices, 0 faces
+21:06:57 [App     ] Delaunay tetrahedralization completed: 2203567 points -> 963358 vertices, 6073066 (+140) cells, 12146202 (+210) faces (10s305ms)
+21:08:00 [App     ] Delaunay tetrahedras weighting completed: 6073206 cells, 12146412 faces (1m2s305ms)
+21:08:10 [App     ] Delaunay tetrahedras graph-cut completed (1.40308e+06 flow): 789290 vertices, 1578693 faces (9s940ms)
+21:08:24 [App     ] Mesh reconstruction completed: 789357 vertices, 1578469 faces (1m36s858ms)
+21:08:24 [App     ] Mesh trimmed to ROI: 0 vertices and 0 faces removed (41ms)
+21:08:29 [App     ] Cleaned mesh: 788623 vertices, 1576693 faces (5s631ms)
+21:08:33 [App     ] Cleaned mesh: 788626 vertices, 1576701 faces (3s787ms)
+21:08:35 [App     ] Cleaned mesh: 788626 vertices, 1576701 faces (2s161ms)
+21:08:36 [App     ] Scene saved (821ms):
+	25 images (25 calibrated)
+	0 points, 788626 vertices, 1576701 faces
+21:08:36 [App     ] Mesh saved: 788626 vertices, 1576701 faces (196ms)
+21:08:36 [App     ] MEMORYINFO: {
+21:08:36 [App     ] 	PageFaultCount 1726730
+21:08:36 [App     ] 	PeakWorkingSetSize 1.92GB
+21:08:36 [App     ] 	WorkingSetSize 94.10MB
+21:08:36 [App     ] 	QuotaPeakPagedPoolUsage 64.34KB
+21:08:36 [App     ] 	QuotaPagedPoolUsage 64.34KB
+21:08:36 [App     ] 	QuotaPeakNonPagedPoolUsage 24.16KB
+21:08:36 [App     ] 	QuotaNonPagedPoolUsage 15.66KB
+21:08:36 [App     ] 	PagefileUsage 105.34MB
+21:08:36 [App     ] 	PeakPagefileUsage 2.04GB
+21:08:36 [App     ] } ENDINFO

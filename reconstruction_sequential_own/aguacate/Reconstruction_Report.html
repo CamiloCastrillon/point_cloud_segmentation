@@ -1,0 +1,83 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<link rel="stylesheet" type="text/css" href="http://imagine.enpc.fr/~moulonp/style.css" /><script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.93/jsxgraphcore.js"></script>
+<title>SequentialReconstructionEngine SFM report.</title>
+</head>
+<h1>SequentialSfMReconstructionEngine</h1>
+<hr>Dataset info:Views count: 27<br><h1>Essential Matrix.</h1>
+-------------------------------<br>-- Robust Essential matrix: <3,20> images: 004.jpg,021.jpg<br>-- Threshold: 75.9768<br>-- Resection status: OK<br>-- Nb points used for robust Essential matrix estimation: 220<br>-- Nb points validated by robust estimation: 220<br>-- % points validated: 1<br>-------------------------------<br><h2>Residual of the robust estimation (Initial triangulation). Thresholded at: 75.9768</h2>
+<h2>Histogram of residuals</h2>
+
+<div id="InitialPairTriangulationKeptInfo" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('InitialPairTriangulationKeptInfo', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00070,2.55282,5.10493,7.65705,10.20917,12.76129,15.31341,17.86553,20.41765,22.96976,];
+var data1= [761.00000,98.00000,10.00000,3.00000,1.00000,4.00000,2.00000,0.00000,0.00000,0.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1]});
+var p2 = board.create('point',[75.97684,0.00000], {fixed:true});
+var p3 = board.create('point',[75.97684,761.00000], {fixed:true});
+var li = board.create('line',[p2,p3], {strokeColor:'00ff00',strokeWidth:2});
+board.unsuspendUpdate();
+board.setBoundingBox([-4.59312,913.20000,27.56358,-152.20000]);
+</script>
+<hr><h1>Resection of Image index: <1> image: 002.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <1> image: 002.jpg<br>-- Threshold: 34.668<br>-- Resection status: OK<br>-- Nb points used for Resection: 187<br>-- Nb points validated by robust estimation: 186<br>-- % points validated: 0.994652<br>-------------------------------<br><h1>Resection of Image index: <0> image: 001.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <0> image: 001.jpg<br>-- Threshold: 15.7042<br>-- Resection status: OK<br>-- Nb points used for Resection: 906<br>-- Nb points validated by robust estimation: 880<br>-- % points validated: 0.971302<br>-------------------------------<br><h1>Resection of Image index: <2> image: 003.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <2> image: 003.jpg<br>-- Threshold: 25.1621<br>-- Resection status: OK<br>-- Nb points used for Resection: 692<br>-- Nb points validated by robust estimation: 639<br>-- % points validated: 0.92341<br>-------------------------------<br><h1>Resection of Image index: <19> image: 020.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <19> image: 020.jpg<br>-- Threshold: 10.8297<br>-- Resection status: OK<br>-- Nb points used for Resection: 466<br>-- Nb points validated by robust estimation: 452<br>-- % points validated: 0.969957<br>-------------------------------<br><h1>Resection of Image index: <21> image: 022.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <21> image: 022.jpg<br>-- Threshold: 9.57151<br>-- Resection status: OK<br>-- Nb points used for Resection: 556<br>-- Nb points validated by robust estimation: 503<br>-- % points validated: 0.904676<br>-------------------------------<br><h1>Resection of Image index: <18> image: 019.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <18> image: 019.jpg<br>-- Threshold: 11.8761<br>-- Resection status: OK<br>-- Nb points used for Resection: 294<br>-- Nb points validated by robust estimation: 289<br>-- % points validated: 0.982993<br>-------------------------------<br><h1>Resection of Image index: <22> image: 023.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <22> image: 023.jpg<br>-- Threshold: 10.4111<br>-- Resection status: OK<br>-- Nb points used for Resection: 113<br>-- Nb points validated by robust estimation: 107<br>-- % points validated: 0.946903<br>-------------------------------<br><h1>Resection of Image index: <17> image: 018.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <17> image: 018.jpg<br>-- Threshold: 10.3953<br>-- Resection status: OK<br>-- Nb points used for Resection: 98<br>-- Nb points validated by robust estimation: 92<br>-- % points validated: 0.938776<br>-------------------------------<br><h1>Resection of Image index: <4> image: 005.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <4> image: 005.jpg<br>-- Threshold: 10.7502<br>-- Resection status: OK<br>-- Nb points used for Resection: 48<br>-- Nb points validated by robust estimation: 45<br>-- % points validated: 0.9375<br>-------------------------------<br><h1>Resection of Image index: <16> image: 017.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <16> image: 017.jpg<br>-- Threshold: 8.93777<br>-- Resection status: OK<br>-- Nb points used for Resection: 46<br>-- Nb points validated by robust estimation: 44<br>-- % points validated: 0.956522<br>-------------------------------<br><h1>Resection of Image index: <15> image: 016.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <15> image: 016.jpg<br>-- Threshold: 6.59065<br>-- Resection status: OK<br>-- Nb points used for Resection: 31<br>-- Nb points validated by robust estimation: 31<br>-- % points validated: 1<br>-------------------------------<br><h1>Resection of Image index: <5> image: 006.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <5> image: 006.jpg<br>-- Threshold: 6.06605<br>-- Resection status: OK<br>-- Nb points used for Resection: 29<br>-- Nb points validated by robust estimation: 28<br>-- % points validated: 0.965517<br>-------------------------------<br><h1>Resection of Image index: <14> image: 015.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <14> image: 015.jpg<br>-- Threshold: 8.57181<br>-- Resection status: OK<br>-- Nb points used for Resection: 65<br>-- Nb points validated by robust estimation: 65<br>-- % points validated: 1<br>-------------------------------<br><h1>Resection of Image index: <13> image: 014.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <13> image: 014.jpg<br>-- Threshold: 8.74949<br>-- Resection status: OK<br>-- Nb points used for Resection: 252<br>-- Nb points validated by robust estimation: 239<br>-- % points validated: 0.948413<br>-------------------------------<br><h1>Resection of Image index: <12> image: 013.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <12> image: 013.jpg<br>-- Threshold: 4.19439<br>-- Resection status: OK<br>-- Nb points used for Resection: 132<br>-- Nb points validated by robust estimation: 117<br>-- % points validated: 0.886364<br>-------------------------------<br><h1>Resection of Image index: <26> image: 027.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <26> image: 027.jpg<br>-- Threshold: 15.3837<br>-- Resection status: OK<br>-- Nb points used for Resection: 123<br>-- Nb points validated by robust estimation: 114<br>-- % points validated: 0.926829<br>-------------------------------<br><h1>Resection of Image index: <11> image: 012.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <11> image: 012.jpg<br>-- Threshold: 12.2248<br>-- Resection status: OK<br>-- Nb points used for Resection: 438<br>-- Nb points validated by robust estimation: 431<br>-- % points validated: 0.984018<br>-------------------------------<br><h1>Resection of Image index: <10> image: 011.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <10> image: 011.jpg<br>-- Threshold: 16.7336<br>-- Resection status: OK<br>-- Nb points used for Resection: 235<br>-- Nb points validated by robust estimation: 222<br>-- % points validated: 0.944681<br>-------------------------------<br><h1>Resection of Image index: <9> image: 010.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <9> image: 010.jpg<br>-- Threshold: 9.46631<br>-- Resection status: OK<br>-- Nb points used for Resection: 95<br>-- Nb points validated by robust estimation: 91<br>-- % points validated: 0.957895<br>-------------------------------<br><h1>Resection of Image index: <6> image: 007.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <6> image: 007.jpg<br>-- Threshold: 7.13704<br>-- Resection status: OK<br>-- Nb points used for Resection: 30<br>-- Nb points validated by robust estimation: 28<br>-- % points validated: 0.933333<br>-------------------------------<br><h1>Resection of Image index: <25> image: 026.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <25> image: 026.jpg<br>-- Threshold: 13.6346<br>-- Resection status: OK<br>-- Nb points used for Resection: 25<br>-- Nb points validated by robust estimation: 22<br>-- % points validated: 0.88<br>-------------------------------<br><h1>Resection of Image index: <7> image: 008.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <7> image: 008.jpg<br>-- Threshold: 4.24377<br>-- Resection status: OK<br>-- Nb points used for Resection: 162<br>-- Nb points validated by robust estimation: 136<br>-- % points validated: 0.839506<br>-------------------------------<br><h1>Resection of Image index: <8> image: 009.jpg<br> 
+</h1>
+-------------------------------<br>-- Robust Resection of camera index: <8> image: 009.jpg<br>-- Threshold: 3.77938<br>-- Resection status: OK<br>-- Nb points used for Resection: 76<br>-- Nb points validated by robust estimation: 60<br>-- % points validated: 0.789474<br>-------------------------------<br><hr><h1>Structure from Motion process finished.</h1>
+-------------------------------<br>-- Structure from Motion (statistics):<br>-- #Camera calibrated: 25 from 27 input images.<br>-- #Tracks, #3D points: 12350<br>-------------------------------<br><h2>Histogram of reprojection-residuals</h2>
+
+<div id="3DtoImageResiduals" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoImageResiduals', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.44161,0.88321,1.32481,1.76642,2.20802,2.64963,3.09123,3.53283,3.97444,];
+var data1= [36200.00000,11195.00000,5174.00000,2671.00000,1453.00000,846.00000,410.00000,231.00000,133.00000,32.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1]});
+board.unsuspendUpdate();
+board.setBoundingBox([-0.79489,43433.60000,4.76933,-7201.60000]);
+</script>
+</html>

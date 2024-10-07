@@ -1,6 +1,6 @@
 {
     "sfm_data_version": "0.3",
-    "root_path": "C:/camilo/point_cloud/images/aguacate/",
+    "root_path": "C:\\camilo\\trabajo_de_grado\\point_cloud_segmentation\\image_datasets\\aguacate",
     "views": [
         {
             "key": 0,
@@ -500,10 +500,10 @@
                     "data": {
                         "width": 1836,
                         "height": 4080,
-                        "focal_length": 3254.8108174801975,
+                        "focal_length": 3254.8399816033827,
                         "principal_point": [
-                            2030.0753918037568,
-                            977.6552352878238
+                            2030.0753631189332,
+                            977.6231349139333
                         ],
                         "disto_k3": [
                             0.0,
