@@ -59,13 +59,23 @@ def calibrate(folder_imgs:str, save_calibration:str, chessboard_size:tuple, squa
         'tvecs': tvecs
     }
 
-    print('/nGuardando datos de calibración.')
+    print('\nGuardando datos de calibración.')
     with open(save_calibration, 'wb') as f:
         pickle.dump(calibration_data, f)
 
     print('Parámetros de calibración guardados exitosamente.')
 
-def load_calibratrion(path_calib_params):
+def create_matrix(fx, cx, fy, cy, save_calibration):
+    calibration_data = {
+        'camera_matrix' : [[fx, 0, cx],[0, fy, cy]]
+    }
+    print('\nGuardando datos de calibración.')
+    with open(save_calibration, 'wb') as f:
+        pickle.dump(calibration_data, f)
+        
+    return calibration_data
+
+def load_calibration(path_calib_params):
     # Cargar los datos desde el archivo .pkl
     with open(path_calib_params, 'rb') as file:
         calibration_data = pickle.load(file)
@@ -79,21 +89,5 @@ def load_calibratrion(path_calib_params):
     Cx=camera_matrix[0][2]
     Fy=camera_matrix[1][1]
     Cy=camera_matrix[1][2]
-    text_matrix = f'{Fx};0;{Cx};0;{Fy};{Cy};0;0;1'
+    text_matrix     = f'{Fx};0;{Cx};0;{Fy};{Cy};0;0;1'
     return text_matrix
-
-folder_imgs_root = 'C:/camilo/trabajo_de_grado/point_cloud_segmentation/images_calibration/'
-folder_imgs = {
-    'aguacate'  : folder_imgs_root+'aguacate/',
-    'monumento' : folder_imgs_root+'monumento/'
-}
-folder_save_root = 'C:/camilo/trabajo_de_grado/point_cloud_segmentation/calibration_matrix/'
-files_save = {
-    'aguacate'  : folder_save_root+'xiaomi_redmi_note_11.pkl',
-    'monumento' : folder_save_root+'iphone_12_pro_max.pkl'
-}
-
-#calibrate(folder_imgs['aguacate'], files_save['aguacate'], (17,11), 6, 'jpg')
-
-t = load_calibratrion('C:/camilo/trabajo_de_grado/point_cloud_segmentation/calibration_matrix/iphone_12_pro_max.pkl')
-print(t)

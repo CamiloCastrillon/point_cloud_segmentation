@@ -3,6 +3,7 @@ from PIL import Image
 import pillow_heif
 import cv2
 import numpy as np
+import glob
 
 def convert_heic_to_jpg(input_folder, output_folder):
     # Registra el plugin de HEIF para que Pillow lo pueda utilizar

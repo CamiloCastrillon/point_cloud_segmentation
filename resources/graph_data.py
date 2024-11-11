@@ -12,9 +12,6 @@ def plot_npy_rgb_image(npy_file):
         # Extraer solo las primeras 3 bandas (RGB)
         img_rgb = img_array[:, :, :3]
 
-        # Cambiar de BGR a RGB si fue cargada por OpenCV en orden incorrecto
-        img_rgb = img_rgb[..., ::-1]  # Invertir los canales
-
         # Graficar la imagen RGB rotada
         plt.imshow(img_rgb)
         plt.axis('off')  # Ocultar los ejes
@@ -53,7 +50,7 @@ def plot_nubes_juntas(paths, colors):
     vis.run()
     vis.destroy_window()
 
-def plot_nube(path, color_hex):
+def plot_npy_xyz(path, color_hex):
     array_cargado = np.load(path)
 
     # Crear un objeto de nube de puntos Open3D
